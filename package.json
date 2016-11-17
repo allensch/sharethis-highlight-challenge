@@ -24,7 +24,7 @@
   "scripts": {
     "babel-node": "babel-node --presets=es2015,stage-1",
     "make-build": "browserify lib/client/main.js -o public/js/build.js",
-    "start": "babel lib/server --out-dir build && PORT=4567 node build/index.js",
+    "start": "babel lib/server --out-dir build && node build/index.js",
     "start-local": "PORT=3456 DEBUG=* nodemon --debug --exec npm run babel-node -- lib/server/index.js",
     "watch-build": "watchify lib/client/main.js -o public/js/build.js --debug --verbose"
   },
